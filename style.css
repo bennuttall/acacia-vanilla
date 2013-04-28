@@ -1,0 +1,349 @@
+/*
+    Theme Name: Acacia Vanilla
+    Theme URI: https://github.com/bennuttall/acacia-vanilla
+    Author: Ben Nuttall
+    Author URI: http://www.bennuttall.com/
+    Description: Theme for bennuttall.com
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: bennuttall
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0
+}
+
+a:link {color: #3672a4; text-decoration: none;}
+a:visited {color: #363aa1;}
+a:hover {text-decoration: underline}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3672a4;
+    font-weight: normal;
+}
+
+h1, h1 a, h1 a:visited, h1 a:hover, h2, h2 a, h2 a:visited {
+    font-size: 28px;
+    text-decoration: none;
+    color: #3672a4;
+    margin: 0;
+}
+
+h1 a:hover {
+    color: #3672a4;
+    background: transparent;
+}
+
+h2, h2 a, h2 a:hover {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#nav, #footer, #main article, #main #prevnext, #sidebar {
+    margin: 0 auto;
+}
+
+#main article, #main #prevnext {
+    float: left;
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+    margin: 10px 0 0 20px;
+    font-size: 12px;
+}
+
+#sidebar img.avatar {
+    width: 200px;
+}
+
+#sidebar #icons {
+    margin: 10px auto 0;
+    height: 50px;
+    text-align: center;
+}
+
+#sidebar ul, #sidebar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul {
+    margin-bottom: 20px;
+}
+
+#sidebar ul li {
+    list-style-type: none;
+}
+
+#sidebar #twitter-badge {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#main article, #main #prevnext {
+    width: 740px;
+}
+
+#nav, #footer {
+    width: 100%;
+    min-width: 740px;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #363aa1;
+    background: #fff;
+}
+
+.logged-in #nav {
+    top: 28px;
+}
+
+#nav .nav-holder {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    float: left;
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    height: 26px;
+}
+
+#nav ul li a, #nav ul li a:visited {
+    text-decoration: none;
+    color: #363aa1;
+}
+
+#nav ul li:hover, #nav ul li:hover a,
+.home #menu-item-791, .home #menu-item-791 a,
+.tag #menu-item-791, .tag #menu-item-791 a,
+.single-post #menu-item-791, .single-post #menu-item-791 a,
+.page-id-792 #menu-item-794, .page-id-792 #menu-item-794 a,
+.page-id-186 #menu-item-788, .page-id-186 #menu-item-788 a,
+.page-id-11 #menu-item-789, .page-id-11 #menu-item-789 a,
+.page-id-2 #menu-item-790, .page-id-2 #menu-item-790 a
+{
+    color: #fff !important;
+    background: #363aa1;
+}
+
+#nav #searchform {
+    float: right;
+    margin-top: 4px;
+    height: 28px;
+}
+
+#nav #searchform input {
+    border: 1px solid #363aa1;
+    height: 22px;
+}
+
+#nav #searchform input[type="text"] {
+   width: 140px;
+   padding: 0 4px;
+}
+
+#nav #searchform input[type="submit"] {
+    background: #363aa1;
+    color: #fff;
+    font-weight: bold;
+}
+
+#nav .break {
+    clear: both;
+    height: 0;
+}
+
+#header {
+    float: left;
+    margin-right: 40px;
+}
+
+#container {
+    width: 960px;
+    margin: 50px auto 20px;
+}
+
+#main {
+    float: left;
+    width: 740px;
+}
+
+#main article {
+    margin-bottom: 20px;
+}
+
+#main article .date, #main article footer {
+    font-size: 12px;
+}
+
+#main article footer {
+    clear: both;
+    text-align: right;
+}
+
+#main article p {
+    margin: 15px 0;
+}
+
+#main article img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main article .extract-holder {
+    float: left;
+    width: 595px;
+}
+
+#main article .post-thumb {
+    float: left;
+    width: 135px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+ul#archive li {
+   list-style-type: none;
+}
+
+#main article blockquote {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 10px;
+    font-style: italic;
+}
+
+#main article .aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+#main article iframe {
+    max-width: 100%;
+    margin: 0 auto !important;
+}
+
+#main article .dd_post_share {
+    float: right;
+}
+
+#main #prevnext {
+    margin-bottom: 10px;
+}
+
+#main #prev, #main #next {
+    width: 50%;
+}
+
+#main #prev {
+    float: left;
+}
+
+#main #next {
+    float: right;
+    text-align: right;
+}
+
+#footer {
+    border-top: 1px solid #363aa1;
+    text-align: center;
+    padding: 5px 0 10px;
+    font-size: 12px;
+    clear: both;
+}
+
+#footer aside {
+    margin-top: 5px;
+}
+
+#footer aside p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 960px) {
+    #nav {
+        position: static;
+        min-width: 0;
+        min-height: 30px;
+    }
+
+    #nav .nav-holder, #nav ul {
+        max-width: 100%;
+        clear: both;
+    }
+
+    #header {
+        margin: 2px 40px 0 10px;
+    }
+
+    #container {
+        width: 100%;
+        margin-top : 10px;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #main article, #main #prevnext {
+        width: 98%;
+        border: 0;
+        padding: 1%;
+        min-width: 0;
+    }
+
+    #main article .extract-holder {
+        width: 75%
+    }
+
+    #main article .post-thumb {
+        width: 23%;
+        margin: 0 1%;
+    }
+
+    #main article .post-thumb img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #footer {
+        min-width: 0;
+    }
+}

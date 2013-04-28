@@ -1,0 +1,54 @@
+<?php
+
+// Menus
+register_nav_menu('nav_bar', 'Nav Bar');
+
+// Post Type support
+
+add_theme_support('post-thumbnails', array('post'));
+
+add_post_type_support('post', array('excerpt', 'thumbnail'));
+
+// Image sizes
+add_image_size('home_thumb', 125, 125);
+
+// Custom functions
+
+function custom_excerpt() {
+    echo get_the_excerpt() . "... <a href='" . get_permalink() . "'>Continue reading</a>";
+}
+
+function show_tag_list ($id, $separator, $before) {
+    $tags = wp_get_post_tags($id);
+
+    if (!empty($tags)) {
+
+        $tags_html = array();
+        foreach ($tags as $tag) {
+            $tags_html[] = "<a href='/tag/{$tag->slug}/'>{$tag->name}</a>";
+        }
+
+        echo $before . join($separator, $tags_html);
+    }
+}
+
+function monthname($month_num) {
+	$months = array(
+		1 => 'January',
+		2 => 'February',
+		3 => 'March',
+		4 => 'April',
+		5 => 'May',
+		6 => 'June',
+		7 => 'July',
+		8 => 'August',
+		9 => 'September',
+		10 => 'October',
+		11 => 'November',
+		12 => 'December',
+	);
+
+	$month = intval($month_num);
+
+	return $months[$month];
+}
