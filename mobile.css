@@ -1,0 +1,54 @@
+@media only screen and (max-width: 960px) {
+    #nav {
+        position: static;
+        min-width: 0;
+        min-height: 30px;
+    }
+
+    #nav .nav-holder, #nav ul {
+        max-width: 100%;
+        clear: both;
+    }
+
+    #header {
+        margin: 2px 40px 0 10px;
+    }
+
+    #container {
+        width: 100%;
+        margin-top : 10px;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #main article, #main #prevnext {
+        width: 98%;
+        border: 0;
+        padding: 1%;
+        min-width: 0;
+    }
+
+    #main article .extract-holder {
+        width: 75%
+    }
+
+    #main article .post-thumb {
+        width: 23%;
+        margin: 0 1%;
+    }
+
+    #main article .post-thumb img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #footer {
+        min-width: 0;
+    }
+}
