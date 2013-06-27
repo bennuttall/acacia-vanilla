@@ -18,6 +18,12 @@ function custom_excerpt() {
     echo get_the_excerpt() . "... <a href='" . get_permalink() . "'>Continue reading</a>";
 }
 
+function timestamped_stylesheet($stylesheet='style.css') {
+    $stylesheet_url = get_bloginfo('template_url') . '/' . $stylesheet;
+    $stylesheet_path = get_stylesheet_directory() . '/' . $stylesheet;
+    echo $stylesheet_url . "?" . filemtime($stylesheet_path);
+}
+
 function show_tag_list ($id, $separator, $before) {
     $tags = wp_get_post_tags($id);
 
