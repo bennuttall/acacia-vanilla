@@ -21,20 +21,28 @@ while ($posts->have_posts()) {
 
 }
 
-echo "<h2>Archive</h2>";
+?>
 
-echo "<ul id='archive'>";
+<h2>Archive</h2>
+
+<ul id="archive">
+
+<?php
+
 foreach ($archive as $year => $months) {
     echo "<li><h3>{$year}</h3><ul>";
     foreach ($months as $month => $posts) {
         echo "<li><h4>" . monthname($month) . "</h4><ul>";
         foreach ($posts as $post) {
-            echo "<li>- <a href='{$post['link']}'>{$post['title']}</a></li>";
+            echo "<li><a href='{$post['link']}'>{$post['title']}</a></li>";
         }
         echo "</ul></li>";
     }
     echo "</ul></li>";
 }
-echo "</ul>";
 
-get_footer();
+?>
+
+</ul>
+
+<?php get_footer();
