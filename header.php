@@ -11,6 +11,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
     <link rel="icon" type="image/jpg" href="<?php bloginfo('template_url'); ?>/images/captain-yesterday-64x64.jpg" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
