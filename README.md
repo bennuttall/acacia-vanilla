@@ -1,3 +1,4 @@
+[![Stories in Ready](http://badge.waffle.io/bennuttall/acacia-vanilla.png)](http://waffle.io/bennuttall/acacia-vanilla)  
 # Acacia Vanilla
 
 Wordpress Theme for my blog - ```www.bennuttall.com``` - a fork of the Manchester Raspberry Jam Wordpress Theme (Acacia Acuminata) http://en.wikipedia.org/wiki/Acacia_acuminata
