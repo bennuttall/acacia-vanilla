@@ -61,7 +61,7 @@ function monthname($month_num) {
 
 function meta_description() {
     if (is_single()) {
-        echo get_the_excerpt();
+        echo str_replace('"', '', get_the_excerpt());
     }
     else {
         echo str_replace('&amp;', '&', strip_tags(get_the_author_meta('description', 1)));
