@@ -23,11 +23,11 @@
         display: none;
     }
 
-    #main {
+    #main, .home #main {
         width: 100%;
     }
 
-    #main article, #main #prevnext {
+    #main article, .home #main article, #main #prevnext {
         width: 98%;
         border: 0;
         padding: 1%;
