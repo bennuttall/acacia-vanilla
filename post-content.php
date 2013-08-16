@@ -1,4 +1,4 @@
-<?php if (is_home()): ?>
+<?php if (get_post_type() == 'post' && !is_single()): ?>
 <div class="extract-holder">
     <p class="extract">
     <?php custom_excerpt(); ?>
