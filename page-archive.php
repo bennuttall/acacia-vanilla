@@ -30,9 +30,9 @@ while ($posts->have_posts()) {
 <?php
 
 foreach ($archive as $year => $months) {
-    echo "<li><h3>{$year}</h3><ul>";
+    echo "<li><h3><a href='/{$year}/'>{$year}</a></h3><ul>";
     foreach ($months as $month => $posts) {
-        echo "<li><h4>" . monthname($month) . "</h4><ul>";
+        echo "<li><h4><a href='/{$year}/{$month}/'>" . monthname($month) . "</h4><ul>";
         foreach ($posts as $post) {
             echo "<li><a href='{$post['link']}'>{$post['title']}</a></li>";
         }
