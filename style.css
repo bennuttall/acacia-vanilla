@@ -217,9 +217,16 @@ h4 {
 
 #main article footer {
     clear: both;
-    text-align: right;
 }
 
+#main article footer div {
+    float: left;
+    width: 50%;
+}
+
+#main article footer .tags {
+    text-align: right;
+}
 #main article p {
     margin: 15px 0;
 }
