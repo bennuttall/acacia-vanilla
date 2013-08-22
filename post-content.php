@@ -3,7 +3,6 @@
     <p class="extract">
     <?php custom_excerpt(); ?>
     </p>
-    <?php get_template_part('post-footer'); ?>
 </div>
 <aside class="post-thumb">
     <a href="<?php the_permalink(); ?>">
