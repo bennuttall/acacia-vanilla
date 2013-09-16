@@ -67,3 +67,14 @@ function meta_description() {
         echo str_replace('&amp;', '&', strip_tags(get_the_author_meta('description', 1)));
     }
 }
+
+function bn_date_crumbs($date) {
+    $date = new DateTime($date);
+
+    $year = $date->format('Y');
+    $month = $date->format('m');
+    $monthname = $date->format('F');
+    $day = $date->format('j');
+
+    echo "<a href='/{$year}/'>{$year}</a> &gt; <a href='/{$year}/{$month}/'>{$monthname}</a> &gt; {$day}";
+}
