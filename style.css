@@ -219,7 +219,7 @@ h4 {
     clear: both;
 }
 
-#main article footer div {
+#main article footer .author, #main article footer .tags {
     float: left;
     width: 50%;
 }
@@ -227,6 +227,21 @@ h4 {
 #main article footer .tags {
     text-align: right;
 }
+
+#main article footer .gittip-support {
+    float: left;
+}
+
+#main article footer .gittip-icon {
+    display: inline;
+    float: left;
+    text-indent: -10000px;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    background: url('images/gittip-16x16.png');
+}
+
 #main article p {
     margin: 15px 0;
 }
