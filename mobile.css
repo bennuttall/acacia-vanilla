@@ -20,17 +20,26 @@
     }
 
     #sidebar {
-        display: none;
+        width: 23%;
+        margin: 10px 1% 0;
     }
 
-    #main, .home #main {
+    #sidebar img.avatar {
+        max-width: 100%;
+    }
+
+    #main {
+        width: 75%;
+    }
+
+    .home #main {
         width: 100%;
     }
 
     #main article, .home #main article, #main #prevnext {
         width: 98%;
+        margin: 1%;
         border: 0;
-        padding: 1%;
         min-width: 0;
     }
 
@@ -48,27 +57,26 @@
         height: auto;
     }
 
-    #home-bio {
-        width: 100%;
-    }
-
     #home-bio .bio-picture, #home-bio .bio, #home-blog .posts .post {
         max-width: 98%;
-        margin: 0;
-        padding: 0 1%;
+        margin: 0 1%;
     }
 
-    #home-bio .bio {
-        margin-top: 20px;
-    }
-
-    #home-bio .bio-picture {
-        width: 100%;
+    #home-bio aside.bio-picture {
+        width: 30%;
+        margin: 10px 0 0;
         text-align: center;
     }
 
+    #home-bio article.bio {
+        width: 64%;
+        margin: 20px 1% 0;
+    }
+
     #home-blog .posts .post {
-        margin-bottom: 20px;
+        float: none;
+        margin: 0 auto 20px;
+        max-width: 98%;
     }
 
     #home-blog .posts .post h3 {
@@ -87,5 +95,26 @@
 
     #footer {
         min-width: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #home-bio aside.bio-picture, #home-bio article.bio {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        width: 100%;
+    }
+
+    #sidebar {
+        width: 200px;
+        max-width: 100%;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
     }
 }

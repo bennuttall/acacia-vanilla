@@ -10,7 +10,7 @@ add_theme_support('post-thumbnails', array('post'));
 add_post_type_support('post', array('excerpt', 'thumbnail'));
 
 // Image sizes
-add_image_size('home-thumb', 75, 75);
+add_image_size('home-thumb', 75, 75, true);
 
 // Custom functions
 
