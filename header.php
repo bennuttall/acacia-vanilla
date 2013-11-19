@@ -10,7 +10,7 @@
 <!--<![endif]-->
 <head>
     <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
-    <meta name="description" content="<?php meta_description(); ?>" />
+    <meta name="description" content="<?php bn_meta_description(); ?>" />
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/jpg" href="<?php bloginfo('template_url'); ?>/images/captain-yesterday-64x64.jpg" />

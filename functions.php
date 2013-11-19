@@ -10,13 +10,9 @@ add_theme_support('post-thumbnails', array('post'));
 add_post_type_support('post', array('excerpt', 'thumbnail'));
 
 // Image sizes
-add_image_size('home_thumb', 125, 125);
+add_image_size('home_thumb', 75, 75);
 
 // Custom functions
-
-function custom_excerpt() {
-    echo get_the_excerpt() . "... <a href='" . get_permalink() . "'>Continue reading</a>";
-}
 
 function timestamped_stylesheet($stylesheet='style.css') {
     $stylesheet_url = get_bloginfo('template_url') . '/' . $stylesheet;
@@ -59,7 +55,9 @@ function monthname($month_num) {
 	return $months[$month];
 }
 
-function meta_description() {
+// Site specific functions
+
+function bn_meta_description() {
     if (is_single()) {
         echo str_replace('"', '', get_the_excerpt());
     }
@@ -67,6 +65,11 @@ function meta_description() {
         echo str_replace('&amp;', '&', strip_tags(get_the_author_meta('description', 1)));
     }
 }
+
+function bn_custom_excerpt($excerpt) {
+    return "{$excerpt}... <a href='" . get_permalink() . "'>Continue reading</a>";
+}
+add_filter('get_the_excerpt', 'bn_custom_excerpt');
 
 function bn_date_crumbs($date) {
     $date = new DateTime($date);

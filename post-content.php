@@ -1,12 +1,12 @@
 <?php if (get_post_type() == 'post' && !is_single()): ?>
 <div class="extract-holder">
     <p class="extract">
-    <?php custom_excerpt(); ?>
+    <?php the_excerpt(); ?>
     </p>
 </div>
 <aside class="post-thumb">
     <a href="<?php the_permalink(); ?>">
-    <?php the_post_thumbnail('home_thumb'); ?>
+    <?php the_post_thumbnail('thumbnail'); ?>
     </a>
 </aside>
 <?php
