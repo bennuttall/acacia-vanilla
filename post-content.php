@@ -1,8 +1,6 @@
 <?php if (get_post_type() == 'post' && !is_single()): ?>
-<div class="extract-holder">
-    <p class="extract">
+<div class="excerpt-holder">
     <?php the_excerpt(); ?>
-    </p>
 </div>
 <aside class="post-thumb">
     <a href="<?php the_permalink(); ?>">

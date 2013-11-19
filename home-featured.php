@@ -12,11 +12,9 @@ $featured = new WP_Query($args);
 while ($featured->have_posts()): $featured->the_post(); ?>
 
 <article class="post">
-    <div class="mini-thumb">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home_thumb'); ?></a>
-    </div>
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <a href="<?php the_permalink(); ?>" class="mini-thumb"><?php the_post_thumbnail('home-thumb'); ?></a>
     <div class="excerpt">
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <?php the_excerpt(); ?>
     </div>
 </article>

@@ -34,7 +34,7 @@
         min-width: 0;
     }
 
-    #main article .extract-holder {
+    #main article .excerpt-holder {
         width: 75%
     }
 
@@ -46,6 +46,43 @@
     #main article .post-thumb img {
         max-width: 100%;
         height: auto;
+    }
+
+    #home-bio {
+        width: 100%;
+    }
+
+    #home-bio .bio-picture, #home-bio .bio, #home-blog .posts .post {
+        max-width: 98%;
+        margin: 0;
+        padding: 0 1%;
+    }
+
+    #home-bio .bio {
+        margin-top: 20px;
+    }
+
+    #home-bio .bio-picture {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home-blog .posts .post {
+        margin-bottom: 20px;
+    }
+
+    #home-blog .posts .post h3 {
+        margin: 0 0 10px;
+        text-align: center;
+    }
+
+    #home-blog .posts .post .mini-thumb {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home-blog .posts .post .excerpt {
+        width: 100%;
     }
 
     #footer {
