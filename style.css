@@ -72,6 +72,11 @@ h4 {
 
 #sidebar img.avatar {
     width: 200px;
+    border-radius: 100px;
+}
+
+#sidebar h2 {
+    text-align: center;
 }
 
 #sidebar #icons {

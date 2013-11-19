@@ -1,1 +1,1 @@
-<img src="<?php bloginfo('template_url'); ?>/images/captain-yesterday.jpg" class="avatar" alt="" />
+<img src="<?php bloginfo('template_url'); ?>/images/ben-nuttall.png" class="avatar" alt="" />
