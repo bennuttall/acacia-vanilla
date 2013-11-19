@@ -8,4 +8,4 @@
     <nav id="next"><?php next_posts_link(); ?></nav>
     <?php endif; ?>
 </aside>
-<?php endif; ?>
+<?php endif;
