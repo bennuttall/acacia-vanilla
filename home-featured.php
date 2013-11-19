@@ -11,7 +11,7 @@ $featured = new WP_Query($args);
 
 while ($featured->have_posts()): $featured->the_post(); ?>
 
-<article class="home-post">
+<article class="post">
     <div class="mini-thumb">
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home_thumb'); ?></a>
     </div>
