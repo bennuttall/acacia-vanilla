@@ -22,8 +22,8 @@
     <![endif]-->
     <link href="<?php timestamped_stylesheet(); ?>" rel="stylesheet" />
     <link href="<?php timestamped_stylesheet('mobile.css'); ?>" rel="stylesheet" />
-    <link rel="author" href="https://plus.google.com/+BenNuttall?rel=publisher" />
-    <link rel="publisher" href="https://plus.google.com/+BenNuttall?rel=author" />
+    <link rel="author" href="https://plus.google.com/+BenNuttall?rel=author" />
+    <link rel="publisher" href="https://plus.google.com/+BenNuttall?rel=publisher" />
     <?php wp_head(); ?>
 </head>
 
